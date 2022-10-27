@@ -4,7 +4,7 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 9000;
 
-app.get('/api/info', (req, res) => {
+app.get('/', (req, res) => {
     res.status(200).json({
         slackUsername: 'Nsongurua',
         backend: true,
